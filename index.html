@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Backseat Runner</title>
+<meta name="description" content="Backseat Runner, an endless runner for iPhone and iPad that plays offline: support, privacy policy and contact.">
+<style>
+:root{
+  --bg:#faf6f0; --card:#ffffff; --text:#2a2320; --muted:#655a52; --border:#e4dacd;
+  --accent:#8f520a; --accent-soft:#fbecd3;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#1f1a18; --card:#29231f; --text:#efe7df; --muted:#b8aca2; --border:#3d3430;
+    --accent:#f0b54a; --accent-soft:#3a2d1c;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--border);background:var(--card)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding-top:14px;padding-bottom:14px}
+.brand{font-weight:800;font-size:18px;letter-spacing:.01em;color:var(--text);text-decoration:none}
+.brand span{display:inline-block;margin-right:8px;padding:1px 7px;border:2px solid currentColor;border-radius:5px;font-size:13px;letter-spacing:.08em}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;margin-left:16px}
+nav a:first-child{margin-left:0}
+main.wrap{padding-top:28px;padding-bottom:40px}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+.lede{font-size:18px;color:var(--muted);margin:0 0 20px}
+p,ul{margin:0 0 14px}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.links{display:grid;gap:12px;margin:0 0 20px;padding:0;list-style:none}
+.links li{margin:0;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px}
+.links a{font-weight:700;font-size:17px}
+.links small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.contact{background:var(--accent-soft);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;padding:14px 18px}
+.contact p{margin:0 0 6px}
+.contact p:last-child{margin:0}
+.email{font-weight:700;word-break:break-word}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:14px;padding:18px 0 28px}
+footer p{margin:0 0 4px}
+@media (max-width:480px){
+  body{font-size:16px}
+  h1{font-size:26px}
+}
+@media print{
+  header nav,footer{display:none}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="https://backseatrunner.github.io/"><span>BSR</span>Backseat Runner</a>
+    <nav aria-label="Pages">
+      <a href="https://backseatrunner.github.io/backseat-runner/support.html">Support</a>
+      <a href="https://backseatrunner.github.io/backseat-runner/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Backseat Runner</h1>
+  <p class="lede">Remember making your fingers run along the car window on a road trip? Help them jump, slide and snack their way down the road. An endless runner for iPhone and iPad that plays offline.</p>
+
+  <ul class="links">
+    <li><a href="https://backseatrunner.github.io/backseat-runner/support.html">Support</a><small>How to play, the road, power-ups, license plates, Game Center, ads, purchases and the FAQ.</small></li>
+    <li><a href="https://backseatrunner.github.io/backseat-runner/privacy.html">Privacy Policy</a><small>What the game keeps on your device, what the ads collect, and your choices.</small></li>
+  </ul>
+
+  <div class="contact">
+    <p><strong>Contact</strong></p>
+    <p>Email: <a class="email" href="mailto:backseatrunner@gmail.com">backseatrunner@gmail.com</a></p>
+    <p>Backseat Runner is made by Omayya Harvey Atout.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Backseat Runner &middot; <a href="https://backseatrunner.github.io/backseat-runner/support.html">Support</a> &middot; <a href="https://backseatrunner.github.io/backseat-runner/privacy.html">Privacy Policy</a></p>
+    <p>This page uses no cookies, scripts or trackers.</p>
+  </div>
+</footer>
+</body>
+</html>
